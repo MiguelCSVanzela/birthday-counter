@@ -1,0 +1,25 @@
+.button {
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 30px;
+    transition: all .3s ease;
+
+    &--gold {
+        color: goldenrod;
+        border: .5px solid goldenrod;
+    }
+
+    &--gold:hover {
+        color: #fff;
+        background-color: goldenrod;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 10px;
+        padding: 3px;
+        margin: 6px auto;
+    }
+}

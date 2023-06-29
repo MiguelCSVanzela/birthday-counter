@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Ysabeau+SC:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles/main.scss">
+    <title>BirthdayCounter</title>
+</head>
+
+<body>
+    <header class=" hero ">
+        <div class="container">
+            <div class="hero__description">
+                <h1>NiversParty <br /> 22 - Novembro 21h</h1>
+                <b>Restam Apenas <span id="niverResult"></span></b>
+            </div>
+            <div class="hero__calculation">
+                E quanto ao seu NiversParty?<br />
+                Niver Data:
+                <input type="text" id="dateGuest" placeholder="22/11/2000 - Nascimento">
+                Niver Hora:
+                <input type="text" id="hourGuest" placeholder="21:00 - Comemoração">
+                <button class="button button--gold" id="submit">Descobrir</button>
+                <span id="guestResult"></span>
+            </div>
+            <div class="arrow-container">
+                <img id="down-arrow" src="./images/chevron-down.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="partyEvent">
+            <div class="container" data-aos="fade-up" data-aos-duration="2500">
+                <img class="partyEvent__image" src="./images/cakes.jpg">
+                <div class="partyEvent__content">
+                    <h3 class="partyEvent__content__title">Bolos & Doces</h3>
+                    <p class="partyEvent__content__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde
+                        perspiciatis
+                        facere quam ea quaerat ex
+                        suscipit
+                        incidunt consequatur minus cum rerum eius quibusdam explicabo dolor nobis autem laudantium, aut
+                        maxime.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="partyEvent">
+            <div class="container" data-aos="fade-up" data-aos-duration="2500">
+                <img class="partyEvent__image" src="./images/decoration.jpg">
+                <div class="partyEvent__content">
+                    <h3 class="partyEvent__content__title">Decoração & Brindes</h3>
+                    <p class="partyEvent__content__description">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                        Voluptatem
+                        facilis
+                        sequi illum accusantium
+                        praesentium vero omnis veniam sapiente nostrum dignissimos nulla eligendi a aut perferendis, at
+                        sint
+                        eos
+                        delectus voluptatibus!</p>
+                </div>
+            </div>
+        </section>
+        <section class="partyEvent">
+            <div class="container" data-aos="fade-up" data-aos-duration="2500">
+                <img class="partyEvent__image" src="./images/people.jpg" />
+                <div class="partyEvent__content">
+                    <h3 class="partyEvent__content__title">Familia & Amigos</h3>
+                    <p class="partyEvent__content__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut vel officia a nam quidem expedita
+                        exercitationem magnam laborum et consectetur, quos distinctio provident quis magni tempora
+                        tenetur
+                        ea
+                        cupiditate voluptas.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="adress" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600">
+        <h2 class="adress__title">Endereço</h2>
+        <p class="adress__content"> Rua FrontEnd Engineer - 963 Jd. Software Engineer</p>
+        <button class="button button--gold">Quero Particpar!</button>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>

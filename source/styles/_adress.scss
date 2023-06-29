@@ -1,0 +1,28 @@
+.adress {
+    display: block;
+    text-align: center;
+    margin: 70px;
+    color: #fff;
+
+    &__title {
+        color: goldenrod;
+        font-size: 30px;
+    }
+
+    &__content {
+        font-size: 20px;
+
+    }
+
+    @media (max-width: 768px) {
+        margin: 20px;
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__content {
+            font-size: 10px;
+        }
+    }
+}

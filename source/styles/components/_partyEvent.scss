@@ -1,0 +1,68 @@
+.partyEvent {
+    max-height: 800px;
+    height: 100%;
+    padding: 20px;
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__image {
+        width: 300px;
+        height: 200px;
+    }
+
+    &__content {
+        max-width: 700px;
+        margin: 0 30px;
+
+        &__title {
+            color: goldenrod;
+            font-size: 40px;
+            font-family: 'MonteCarlo', cursive;
+
+        }
+
+        &__description {
+            font-size: 25px;
+            color: #fff;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 5px;
+
+        .container {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: 0.1px solid #ccc;
+
+
+
+        }
+
+        &__image {
+            width: 300px;
+        }
+
+        &__content {
+            max-height: 300px;
+            margin: 0 10px;
+
+            &__title {
+                font-size: 25px;
+            }
+
+            &__description {
+                font-size: 10px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

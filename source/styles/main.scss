@@ -1,0 +1,31 @@
+@use 'hero';
+@use 'adress';
+@use './components/partyEvent';
+@use './components/button';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        max-width: 350px;
+    }
+}

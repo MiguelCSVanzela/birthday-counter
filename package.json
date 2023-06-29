@@ -1,0 +1,17 @@
+{
+  "name": "birthdaycounter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel source/index.html source/scripts/main.js source/styles/main.scss",
+    "build": "parcel build source/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3",
+    "sharp": "^0.31.3"
+  }
+}
