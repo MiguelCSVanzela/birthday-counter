@@ -28,7 +28,11 @@ function calculateTimeDistance(timeDistanceValue) {
     return { daysForBirth, hoursForBith, minutesForBirth, secondsForBirth };
 }
 
+
+
 const birthdayCounter = setInterval(function () {
+    const actualDate = new Date();
+    const timeStampDate = actualDate.getTime();
     const timeDistance = timesStampBirth - timeStampDate;
 
     let { daysForBirth, hoursForBith, minutesForBirth, secondsForBirth } = calculateTimeDistance(timeDistance);
@@ -40,6 +44,9 @@ const birthdayCounter = setInterval(function () {
         counterLabel.innerHTML = `Infelizmente meu aniversário já passou este ano, agora restam ${-(daysForBirth)} dias para a próxima festa`;
     }
 }, 1000);
+
+
+
 
 
 
@@ -75,8 +82,8 @@ button.onclick = function () {
         } else {
             guestResult.innerHTML = `Restam ${daysForBirth} Dias, ${hoursForBith} Horas e ${minutesForBirth} Minutos P/ seu Niver de ${age} Anos`;
             hero.classList.add('hero--guest-img');
-            // GuestDateNiver.value = "";
-            // GuestHourNiver.value = "";
+            GuestDateNiver.value = "";
+            GuestHourNiver.value = "";
         }
     }
 
